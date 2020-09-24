@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.Controller">
+   <children>
+      <TextArea fx:id="txtAreaMatrixA" layoutX="14.0" layoutY="41.0" prefHeight="220.0" prefWidth="220.0" />
+      <TextArea fx:id="txtAreaMatrixB" layoutX="506.0" layoutY="41.0" prefHeight="220.0" prefWidth="220.0" />
+      <TextArea fx:id="txtAreaMatrixC" layoutX="260.0" layoutY="261.0" prefHeight="220.0" prefWidth="220.0" />
+      <Button fx:id="btnSave" layoutX="260.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#btnSavePressed" prefHeight="30.0" prefWidth="220.0" text="Сохранить результат в файл" />
+      <Label layoutX="14.0" layoutY="24.0" text="Матрица A" />
+      <Label layoutX="506.0" layoutY="24.0" text="Матрица B" />
+      <Label layoutX="260.0" layoutY="244.0" text="Результат" />
+      <Button fx:id="btnTransposeMatrixA" layoutX="14.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#btnTransposeMatrixAPressed" prefHeight="30.0" prefWidth="220.0" text="Транспонировать" />
+      <Button fx:id="btnTransposeMatrixB" layoutX="506.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#btnTransposeMatrixBPressed" prefHeight="30.0" prefWidth="220.0" text="Транспонировать" />
+      <Button fx:id="btnAddMatrices" layoutX="275.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#btnAddMatricesPressed" prefHeight="40.0" prefWidth="190.0" text="A + B" />
+      <Button fx:id="btnSubtractMatrices" layoutX="275.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#btnSubtractMatricesPressed" prefHeight="40.0" prefWidth="190.0" text="A - B" />
+      <Button fx:id="btnMultiplyMatrices" layoutX="275.0" layoutY="171.0" mnemonicParsing="false" onMouseClicked="#btnMultiplyMatricesPressed" prefHeight="40.0" prefWidth="190.0" text="A * B" />
+      <Button fx:id="btnMultiplyMatrixAByNumber" layoutX="14.0" layoutY="291.0" mnemonicParsing="false" onMouseClicked="#btnMultiplyMatrixAByNumberPressed" prefHeight="30.0" prefWidth="180.0" text="Умножить матрицу на:" />
+      <TextField fx:id="txtFieldNumberA" layoutX="194.0" layoutY="291.0" prefHeight="30.0" prefWidth="40.0" text="2" />
+      <Button fx:id="btnMultiplyMatrixBByNumber" layoutX="506.0" layoutY="291.0" mnemonicParsing="false" onMouseClicked="#btnMultiplyMatrixBByNumberPressed" prefHeight="30.0" prefWidth="180.0" text="Умножить матрицу на:" />
+      <TextField fx:id="txtFieldNumberB" layoutX="686.0" layoutY="291.0" prefHeight="30.0" prefWidth="40.0" text="2" />
+      <Button fx:id="btnInvertMatrixA" layoutX="14.0" layoutY="351.0" mnemonicParsing="false" onMouseClicked="#btnInvertMatrixAPressed" prefHeight="30.0" prefWidth="220.0" text="Найти обратную" />
+      <Button fx:id="btnInvertMatrixB" layoutX="506.0" layoutY="351.0" mnemonicParsing="false" onMouseClicked="#btnInvertMatrixBPressed" prefHeight="30.0" prefWidth="220.0" text="Найти обратную" />
+      <Button fx:id="btnCalculateDeterminantA" layoutX="14.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#btnCalculateDeterminantAPressed" prefHeight="30.0" prefWidth="180.0" text="Найти определитель" />
+      <TextField fx:id="txtFieldDeterminantA" disable="true" layoutX="194.0" layoutY="321.0" prefHeight="30.0" prefWidth="40.0" />
+      <Button fx:id="btnCalculateDeterminantB" layoutX="506.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#btnCalculateDeterminantBPressed" prefHeight="30.0" prefWidth="180.0" text="Найти определитель" />
+      <TextField fx:id="txtFieldDeterminantB" disable="true" layoutX="686.0" layoutY="321.0" prefHeight="30.0" prefWidth="40.0" />
+   </children>
+</AnchorPane>
